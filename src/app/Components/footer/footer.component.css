@@ -1,0 +1,60 @@
+h1 {
+  color: rgb(243, 98, 49);
+  font-size: 25px;
+}
+p,
+a {
+  color: #a76;
+}
+
+P:hover,
+a:hover {
+  color: pink;
+}
+
+.foot {
+  background: cadetblue;
+  padding: 0;
+  border-top: 1px solid #a76;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  align-items: flex-start;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.content {
+  margin-left: 20px;
+}
+
+.Contentbox {
+  padding: 10px;
+  border: 1px solid #a76;
+  border-radius: 20px;
+  background: rgb(211, 233, 251);
+  width: 25%;
+}
+
+.Contentbox :hover {
+  background: aliceblue;
+  border: white;
+}
+
+.icons {
+  padding: 10px;
+  font-size: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.endnote {
+  background-color: grey;
+  color: aliceblue;
+  text-align: center;
+  padding: 15px;
+  margin-top: 15px;
+}

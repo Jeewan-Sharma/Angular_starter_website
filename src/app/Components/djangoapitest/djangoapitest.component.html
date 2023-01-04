@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="display">
+    <h1>Posts list</h1>
+    <div class="products-container">
+      <table>
+        <tr>
+          <th>Product ID</th>
+          <th>Title</th>
+          <th>Status</th>
+        </tr>
+        <tr *ngFor="let post of djapidata">
+          <td>
+            {{ post.id }}
+          </td>
+          <td>
+            {{ post.title }}
+          </td>
+          <td>
+            {{ post.completed }}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="adddata">
+    <form #dataform="ngForm" (ngSubmit)="getFormData(dataform.value)">
+      <input type="text" ngModel name="title" placeholder="Enter Title" />
+      <br />
+      <select name="completed" ngModel>
+        <option value="true">True</option>
+        <option value="false">False</option>
+      </select>
+      <br />
+      <button>Add New Data</button>
+    </form>
+  </div>
+</div>

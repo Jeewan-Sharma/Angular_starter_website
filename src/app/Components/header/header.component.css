@@ -1,0 +1,50 @@
+header {
+  background: cadetblue;
+  padding: 0;
+  border-bottom: 1px solid #a76;
+}
+h1 {
+  color: rgb(243, 98, 49);
+  font-size: 2vw;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:hover {
+  color: pink;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  margin-top: 13px;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 3rem;
+}
+
+fa-icon {
+  font-size: 25px;
+}

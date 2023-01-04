@@ -1,0 +1,12 @@
+img {
+  width: 100%;
+  height: 70vh;
+}
+picsum-img-wrapper {
+  border: 1px solid;
+  border-radius: 10px;
+}
+img {
+  border: 1px solid;
+  border-radius: 10px;
+}

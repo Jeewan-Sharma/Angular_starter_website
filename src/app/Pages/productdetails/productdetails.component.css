@@ -1,0 +1,10 @@
+.container {
+  margin-top: 5px;
+  padding: 20px;
+  height: 700px;
+  text-align: center;
+}
+
+.end {
+  text-align: end;
+}

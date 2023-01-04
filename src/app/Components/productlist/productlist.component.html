@@ -1,0 +1,62 @@
+<div class="container">
+  <h1>Posts list</h1>
+  <div class="products-container">
+    <a
+      class="products"
+      *ngFor="
+        let post of $any(
+          clientsideuserspost | slice : (page - 1) * 10 : page * 10
+        )
+      "
+      (click)="getClientUserPostDetails(post)"
+    >
+      {{ post.title || "" }}
+    </a>
+  </div>
+  <div class="pagination">
+    <ngb-pagination
+      [collectionSize]="pagecount"
+      [(page)]="page"
+      aria-label="Default pagination"
+    ></ngb-pagination>
+  </div>
+</div>
+
+<!-- in Tabular Form -->
+
+<!-- <div class="container">
+  <h1>Posts list</h1>
+  <div class="products-container">
+    <table>
+      <tr>
+        <th>Product ID</th>
+        <th>Provider</th>
+        <th>title</th>
+      </tr>
+      <tr
+        *ngFor="
+          let post of $any(
+            clientsideuserspost | slice : (page - 1) * 8 : page * 8
+          )
+        "
+      >
+        <td>
+          {{ post.id }}
+        </td>
+        <td>
+          {{ post.userId }}
+        </td>
+        <td>
+          {{ post.title }}
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <ngb-pagination
+      [collectionSize]="70"
+      [(page)]="page"
+      aria-label="Default pagination"
+    ></ngb-pagination>
+  </div>
+</div> -->
